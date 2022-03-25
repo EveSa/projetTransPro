@@ -22,6 +22,41 @@ La bibliothèque `pdfminer.six`, version adaptée de pdfminer pour python3, nous
 
 ## Formater le texte
 
+l'OCRisation se fait dans ce sens là :
+corpus_final/Quand la crise bouscules les horizons pro.pdf
+corpus_final/Un quart des Français prêt à changer de métier pour avoir un autre cadre de vie.pdf
+corpus_final/Coronavirus  Æ Je n'Çtais plus Ö ma place Ø... Apräs laˇpandÇmie, le boom desˇreconversions vers lesˇmÇtiersˇdu bien-àtre.pdf
+corpus_final/Ecoeures par le systeme ces soignants quittent l hopital.pdf
+corpus_final/Ils quittent leur job pour se lancer dans l artisanat.pdf
+corpus_final/simple1.pdf
+corpus_final/Reconversion Voici le top 5 des mÇtiers les plus recherchÇs. LaˇcriseˇsanitaireˇaccÇläre les envies deˇchangement.pdf
+corpus_final/Temoignage coach pro-Changer de métier-du reve a la realite.pdf
+corpus_final/62% des 25-34 ans envisagent sÇrieusement de se reconvertir.pdf
+corpus_final/Une reconversion dans l'immobilier.pdf
+corpus_final/Temoignage-ras le bol de la routine.pdf
+corpus_final/Ce metier je l'aimais mais ce n etait plus acceptable.pdf
+corpus_final/Temoignages de jeunes ds l'aero en recvrsion.pdf
+corpus_final/Lesˇreconversionsˇprofessionnelles, vÇritable enjeu des prochaines annÇes.pdf
+corpus_final/j ai retrouve une utilite sociale.pdf
+corpus_final/Les sous-traitants sur le carreau.pdf
+corpus_final/d infirmier a videaste.pdf
+corpus_final/LeˇCovidˇpousse Ö laˇreconversionˇprofessionnelle.pdf
+corpus_final/Temoignage D’aide-soignant à homme toutes mains en auto-entreprise.pdf
+corpus_final/Covid-19  Ces soignants qui rendent leur blouse.pdf
+corpus_final/Covid 19. Changer de job face Ö la crise, pas si simple.pdf
+corpus_final/Leur nouvelle vie aupräs des morts.pdf
+corpus_final/Des profils varies se cotoient à l'ecole de Crepes.pdf
+corpus_final/Ces signes Çvidents qui prouvent qu'il estˇurgentˇdeˇchangerˇdeˇmÇtier.pdf
+corpus_final/Ces ingÇnieurs qui changent de cap.pdf
+corpus_final/∑ GuerlÇdan, ilsˇchangent de vieˇprofessionnelleˇapräs la crise duˇCovid.pdf
+corpus_final/LeˇCovidˇaccÇlÇrateur desˇreconversions et d'un nouveau rapport auˇtravail.pdf
+corpus_final/Milleniaux envisagent de se reconvertir.pdf
+corpus_final/Avec la crise, ils veulent changer de mÇtier.pdf
+corpus_final/Covidˇ les Franáais ont soif deˇreconversionˇprofessionnelle.pdf
+corpus_final/Coronavirus  Laˇcriseˇsanitaireˇa accÇlÇrÇ les envies deˇreconversionˇprofessionnelle.pdf
+corpus_final/Apräs la pandÇmie, une envie de reconversion professionnelle.pdf
+
+
 # Annotation des information personelle
 
 - age
