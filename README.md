@@ -4,6 +4,8 @@
   - formatter le texte obtenu
 - faire une convention pour les entités nommées
 - diviser le corpus en 3 parties (il y a 31 textes, on fait 10 textes par parties ?)
+  - trois partie : apprentissage, test et évalutation
+  - critique : pourquoi ne pas faire la méthode par pli ?x
 - annoter manuellement en EN une des parties du corpus ( préférablement toute annoter tous les textes pour le AIA)
 - réaliser un automate / un programme qui reconnaît les EN
 - les tester sur une deuxième partie du corpus 
@@ -19,3 +21,12 @@ La bibliothèque `pdfminer.six`, version adaptée de pdfminer pour python3, nous
 ## Enlever les métadonnées 
 
 ## Formater le texte
+
+# Annotation des information personelle
+
+- age
+- nom
+- status
+- endroit ou il travaille
+Utiliser les étiquettes ESLO
+- annoter distinctement les acteurs (verbe d'actions ?) et les témoins de transition (plus passif ?)

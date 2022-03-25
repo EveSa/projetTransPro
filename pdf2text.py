@@ -5,13 +5,15 @@ import glob
 import os
 
 #On fait une liste des noms des fichiers à traiter
-direct = glob.glob('corpus_final/*.pdf')
+directory = glob.glob('corpus_final/*.pdf')
 
 #On ouvre un fichier qui contiendra le résultat final
 corpus_OCR = open('corpus_final.txt', 'w')
 
 #On parcours les fichiers pour l'OCR
-for file in direct :
+for file in directory :
     text = extract_text(file)
+    text = text.replace("\n", " ")
+    text = text.replace("-","")
     corpus_OCR.write(text)
     print('done')
