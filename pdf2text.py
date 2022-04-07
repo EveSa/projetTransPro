@@ -13,7 +13,7 @@ corpus_OCR = open('corpus_final.txt', 'w')
 #On parcours les fichiers pour l'OCR
 for file in directory :
     text = extract_text(file)
-    text = text.replace("\n", " ")
-    text = text.replace("-","")
+    #text = text.replace("\n", " ")
+    #text = text.replace("-","")
     corpus_OCR.write(text)
-    print('done')
+    print(file)   
