@@ -39,8 +39,15 @@ with open("annotationEvalFinale.xml", "w") as annotationFinale :
                             lettres = []
                             for ligne in pdfs :
                                 lettres += list(ligne)
-                                remplacement = lettres[buf3[0]:buf3[1]]
+                                remplacement = "".join(lettres[buf3[0]:buf3[1]])
                         print(remplacement)
                         buf3.pop(0)
                         buf3.pop(0)
-
+                        annotationFinale.write(f'<singlePosition index="{remplacement}"/>')
+                    search1 = re.match("<start>", ligne)
+                    search2 = re.match("</start>", ligne)
+                    search3 = re.match("<end>", ligne)
+                    search4 = re.match("</end>", ligne)
+                    search5 = re.match(r"<singlePosition.*", ligne)
+                    if search1 == None and search2 == None and search3 == None and search4 == None and search5 == None :
+                        annotationFinale.write(ligne)
