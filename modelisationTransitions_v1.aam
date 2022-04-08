@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotationModel>
+
+	<units>
+	
+		<!-- catégorie de la transition professionnelle - idée de mouvement --> 
+		<type name="CatTransitionsPro" groups="transitionsPro">
+			<featureSet>
+
+				<feature name="Etat d'avancement de la transition">
+					<possibleValues  default="nonRenseigne">
+						<value>débutTransition</value>
+						<value>enCoursTransition</value>
+						<value>finTransition</value>
+						<value>nonRenseigne</value>
+					</possibleValues>
+				</feature>
+
+			</featureSet>
+		</type>
+
+
+		<!-- catégorie Covid--> 
+		<type name="CatCovid">
+			<featureSet>
+
+			</featureSet>
+		</type>
+
+		<!-- catégorie Motivation --> 
+		<type name="CatMotivation">
+			<featureSet>
+
+			</featureSet>
+		</type>
+
+		<!-- catégorie conditions travail --> 
+		<type name="CatConditionsTravail">
+			<featureSet>
+
+			</featureSet>
+		</type>
+
+		<!-- catégorie économique --> 
+		<type name="CatEconomique">
+			<featureSet>
+
+			</featureSet>
+		</type>
+
+		<!-- catégorie des personnes mentionnées -->
+		<type name="CatPersonneMentionnee" groups="personneMentionnee">
+			<featureSet>
+
+				<feature name="Enonciateur">
+					<possibleValues  default="">
+						<value>Oui</value>
+						<value>Non</value>
+					</possibleValues>
+				</feature>
+
+				<feature name="TypePersonneMentionnee">
+					<possibleValues  default="">
+						<value>ActeurTransition</value>
+						<value>TemoinTransition</value>
+						<value>ActeurPotentielTransition</value>
+					</possibleValues>
+				</feature>
+
+				<feature name="TypeInformation">
+					<possibleValues  default="">
+						<value>Nom</value>
+						<value>Age</value>
+						<value>MétierActuel</value>
+						<value>LieuDeVie</value>
+						<value>LieuDeTravail</value>
+						<value>Donnée chiffrée</value>
+					</possibleValues>
+				</feature>
+
+				<feature name="MetiersSiActeurTransition">
+					<possibleValues  default="PasActeurTransition">
+						<value>MétierAvant</value>
+						<value>MétierApres</value>
+						<value>PasActeurTransition</value>
+					</possibleValues>
+				</feature>
+
+			</featureSet>
+		</type>
+
+
+		<!-- catégorie des émotions - en lien avec qq chose (énonciateur) -->
+		<type name="CatEmotions" groups="emotions">
+			<featureSet>
+
+				<feature name="polarité">
+					<possibleValues  default="">
+						<value>Aucune</value>
+						<value>Positif</value>
+						<value>Négatif</value>
+					</possibleValues>
+				</feature>
+
+			</featureSet>
+		</type>
+
+
+
+		<!-- catégorie du lien causal - expression de cause, connecteur entre deux entités, qui exprime la causalité -->
+		<type name="CatLienCausal" groups="lienCausal">
+			<featureSet>
+
+			</featureSet>
+		</type>
+
+		<!-- catégorie des expressions temporelles - toujours en lien avec qq chose -->
+		<type name="CatExpressionsTemporelles" groups="expressionsTemporelles">
+			<featureSet>
+
+			</featureSet>
+		</type>
+
+
+	</units>
+
+	
+	
+	<relations>
+		<!-- relation pour marquer les coreferences (personnes)-->
+		<type name="coreference" oriented="True">
+			<featureSet>
+
+			</featureSet>
+		</type>
+
+		<!-- relation pour marquer les liens entre données chiffrées et personnes-->
+		<type name="lienDonneeChiffree" oriented="True">
+			<featureSet>
+
+			</featureSet>
+		</type>
+
+		<!-- relation expressions temporelles vers une autre unité -->
+		<type name="relationExpressionsTemporelles" oriented="True" groups="expressionsTemporelles">
+			<featureSet>
+
+			</featureSet>
+		</type>s
+
+		<!-- relation emotion vers une autre unité -->
+		<type name="relationEmotions" oriented="True" groups="emotions">
+			<featureSet>
+
+			</featureSet>
+		</type>
+
+	</relations>
+	
+
+
+	<schemas>
+	</schemas>
+	
+</annotationModel>
