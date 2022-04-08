@@ -15,8 +15,6 @@ with open("annotationEvalFinale.xml", "w") as annotationFinale :
                 for ligne in annotationaa :
                     buf4.pop(0)
                     buf4.append("-") #on décale le buffer dans le texte
-                    print(buf2)
-                    print(buf4)
                     #on vérifie que les lignes que l'on ne veut pas ne soit pas écrite
                     if buf2[0] == "-" and buf2[1] == "-" and buf2[2] == "-" and '</featureSet>' not in buf[0] and '</featureSet>' not in buf[1]  and '</featureSet>' not in buf[2] and not "findemot" in buf4  :
                         annotationFinale.write(ligne)
