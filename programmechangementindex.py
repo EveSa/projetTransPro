@@ -51,3 +51,7 @@ with open("annotationEvalFinale.xml", "w") as annotationFinale :
                     search5 = re.match(r"<singlePosition.*", ligne)
                     if search1 == None and search2 == None and search3 == None and search4 == None and search5 == None :
                         annotationFinale.write(ligne)
+
+#### PROBLEMES
+#1. Les mots sortis des index="" sont pas les bons --> peut-être un problème au niveau de l'extraction du texte lettre par lettre? (genre il prend pas les caractères non printable?)
+#2. tous les start/end sont tej du final --> c'est grave?
