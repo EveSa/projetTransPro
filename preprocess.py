@@ -7,7 +7,7 @@ corpus_xml=open("corpus_final_annote.xml.aa").read()
 #Et le corpus de référence
 corpus=open("corpus_final_annote.txt.ac").read()
 
-nlp = spacy.blank("en")
+nlp = spacy.blank("fr")
 training_data = annotations(corpus_xml,corpus)
 # the DocBin will store the example documents
 db = DocBin()
