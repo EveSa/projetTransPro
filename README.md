@@ -54,13 +54,7 @@ Il faut également récupérer les relations.
 ## Rappel, Précision et F-mesure
 
 
-# Critiques 
 
-- le peut de cohérence dans les annotations
-  - On aurait préféré une catégorie typeDésignation dans CatPersonneMentionnée par exemple plutôt que Métier+Nom
-  - On a décidé de ne pas utiliser la valeur "Nom" de Information personnelles pour éviter les confusions pour Spacy.
-  - On pense qu'il serait nécéssaire de ajouter une valeur de "désignation collective" ou "désignation individuelle"
-- On peut aussi se poser la question de la pertinence de l'annotation de toutes les coréférence du texte.
 
 # Organisation du travail
 
@@ -88,6 +82,7 @@ Il faut également récupérer les relations.
 
 ## Comment on 'la fait 
 ### annotation mannuelle/accord interanno/outil)
+- Statiqtique sur les annotations manuelles (nb catégorie, ...)
 
 ### Annotation automatique (Unitex/Spacy)
 
@@ -95,3 +90,21 @@ Il faut également récupérer les relations.
 - On a pas déclarer tout ce qu'o a fait manuellement
 
 ## Conclusion critique des résultats
+
+### Critiques 
+
+- le peut de cohérence dans les annotations
+  - On aurait préféré une catégorie typeDésignation dans CatPersonneMentionnée par exemple plutôt que Métier+Nom
+  - On a décidé de ne pas utiliser la valeur "Nom" de Information personnelles pour éviter les confusions pour Spacy.
+  - On pense qu'il serait nécéssaire de ajouter une valeur de "désignation collective" ou "désignation individuelle"
+- On peut aussi se poser la question de la pertinence de l'annotation de toutes les coréférence du texte.
+
+********************
+Critère de notatino
+
+- aisance à l'oral
+- un dossier zippé
+  - avec un document explicatif 
+  - les scripts
+  - ...
+- organisation de travail
