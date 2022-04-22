@@ -7,6 +7,7 @@ import re
 corpus_xml=open("corpus_final_annote.xml.aa").read()
 #Et le corpus de référence
 corpus=open("corpus_final_annote.txt.ac").read()
+fichier_sortie=open("fichier_sortie.txt", 'w')
 
 def annotations(corpus_xml,corpus):
 
@@ -30,14 +31,15 @@ def annotations(corpus_xml,corpus):
 			#ça c'est pas pour tout de suite en fait
 			if not re.search(r"====",para) :
 				nex_key_assign[(start,end)]=para
-	print(paragraph_id)
+	fichier_sortie.write(str(nex_key_assign.items()))
+
 
 	# Regarder dans quels paragaphes sont les annotations
 	##Utiliser un dictionnaire pour ajouter l'annotation pour la clé paragraphe
 
 	for unit in corpus_xml:
 		if re.search(r"<unit.*?>.*?<type>(?!paragraph).*?</type>",unit) :	#?! ça veut dire "différent de". On cherche tous les noeuds "<unit>" qui contiennent "paragraph"
-			print(unit)	
+			
 
 			#Petit trucs de test
 			#(<featureSet>(<featurename="[A-z]+">[A-z]+</feature>)+?</featureSet>|<featureSet/>)
@@ -47,14 +49,13 @@ def annotations(corpus_xml,corpus):
 
 			#Et là, on récupère les infos
 			m=re.search(r'<characterisation><type>([a-zA-Z0-9À-ž]+)<\/type>((<featureSet>((<featurename="[a-zA-Z0-9À-ž]+">([a-zA-Z0-9À-ž]+)<\/feature>)|(<featurename="[a-zA-Z0-9À-ž]+"\/>))+<\/featureSet>)|<featureSet\/)<\/characterisation><positioning><start><singlePositionindex="([0-9]+)"\/><\/start><end><singlePositionindex="([0-9]+)"\/><\/end><\/positioning>',unit)		
-			print(m)
+			
 			#Le nom de l'entité
 			en=m.group(1)
 			#Son début dans le paragraphe (il me semble)
 			start_EN=int(m.group(8))
 			#Sa fin dans le paragraphe
 			end_EN=int(m.group(9))
-			print(en,start_EN,end_EN)
 
 			# Et on met tout dans le dico
 			for start,end in paragraph_id:
@@ -64,16 +65,24 @@ def annotations(corpus_xml,corpus):
 	#Petits trucs de test encore
 	#print(paragraph_id)
 	#
-
+	dic_final={}
 	#Entrer la string dans le dict
+	for key, value in paragraph_id.items():
+		if nex_key_assign.get(key)==None:
+			continue
+		dic_final[nex_key_assign.get(key)]=value
+	print(dic_final)
+
 	new_dic=dict([(nex_key_assign.get(key), value) for key, value in paragraph_id.items()])
-	print(new_dic)
+	#print(new_dic)
 	# Faire une liste de tuples qui contiennent ("le paragraphe",[(start,end,EN),(...)])
 	docs=list(new_dic.items())
-	
-	return docs
+	#print(docs)
+
+	return dic_final
 
 
+training_data = annotations(corpus_xml,corpus)
 	########### Ce qu'il reste à faire ################
 	# - les cas où la regex ne fonctionne pas
 	# - ajouter le texte du paragraphe dans le dictionnaire
