@@ -4,17 +4,17 @@ from glozz2tuples import annotations
 
 #On ouvre le corpus annoté
 corpus_xml=open("corpus_final_annote.xml.aa").read()
-#Et le corpus de référence
+#Et le corpus non annoté
 corpus=open("corpus_final_annote.txt.ac").read()
 
 nlp = spacy.blank("fr")
 training_data = annotations(corpus_xml,corpus)
 # the DocBin will store the example documents
 db = DocBin()
-for text, annotations in training_data:
+for text, annotation in training_data:
     doc = nlp(text)
     ents = []
-    for start, end, label in annotations:
+    for start, end, label in annotation:
         span = doc.char_span(start, end, label=label)
         ents.append(span)
     doc.ents = ents

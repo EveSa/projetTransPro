@@ -5,7 +5,7 @@ import re
 
 #On ouvre le corpus annoté
 corpus_xml=open("corpus_final_annote.xml.aa").read()
-#Et le corpus de référence
+#Et le corpus non annoté
 corpus=open("corpus_final_annote.txt.ac").read()
 
 #On instancie les variables
