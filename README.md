@@ -16,3 +16,5 @@ Relations :
 - coreference
 - relationDonneeChiffree
 - relationInformationsPersonnelles
+
+On annote les pronoms aussi.
