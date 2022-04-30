@@ -17,4 +17,8 @@ Relations :
 - relationDonneeChiffree
 - relationInformationsPersonnelles
 
-On annote les pronoms aussi.
+On annote les pronoms aussi --> Personne mentionné et aucun dans nom et métier
+
+Laurent est conseiller immobilier. --> information perso, nom de métier
+Laurent, conseiller immobilier --> information perso, nom de métier
+D'après le conseiller immobilier, .... --> personne mentionnée, nom de métier
