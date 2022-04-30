@@ -24,3 +24,5 @@ Laurent, conseiller immobilier --> information perso, nom de métier
 D'après le conseiller immobilier, .... --> personne mentionnée, nom de métier
 
 Les relations de coref pour on ne peuvent être gérées si le référent est scindé en deux.
+
+Lorsque deux entités se chevauchent on va en choisir une par rapport à l'autre pour des raisons de désambiguisation de l'apprentissage du système mis en place après l'annotation.
