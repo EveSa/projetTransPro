@@ -22,3 +22,5 @@ On annote les pronoms aussi --> Personne mentionné et aucun dans nom et métier
 Laurent est conseiller immobilier. --> information perso, nom de métier
 Laurent, conseiller immobilier --> information perso, nom de métier
 D'après le conseiller immobilier, .... --> personne mentionnée, nom de métier
+
+Les relations de coref pour on ne peuvent être gérées si le référent est scindé en deux.
