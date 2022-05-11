@@ -13,19 +13,49 @@
 - produire des résultats finaux sur la dernière partie du corpus avec rappel, précision et f-mesure et si possible les comparer avec un Accord inter Annotateur
 
 ***********
+
+
 # Obtenir un corpus exploitable à partir de fichier pdf
-## Convertir les pdf en format txt
 
 La bibliothèque `pdfplumber`, qui utilise `pdfminer.six` la version adaptée de pdfminer pour python3, nous permet de réaliser l'OCR de l'ensemble du corpus automatiquement en itérant la requête sur tous les fichiers du dossier `corpus_final` fournit par les chercheuses avec une boucle `for`.
 On essaie également une OCRisation avec la bibliothèque `pymuPDF` en bouclant avec la même méthode.
 
-## Enlever les métadonnées 
 
-## Formater le texte
+******************************************
 
+# <mark>Soutenance</mark>
 
+## <mark> Problématique</mark>
 
-# Annotation des information personelle avec Glozz
+Avec l'impact de la COVID-19 sur l'économie, les transitions professionnelles se sont faites plus courante. L'objetif est donc de mettre en place un modèle pour reconnaître automatiquement les transitions professionnelles dans les textes journalistiques à partir d'un corpus.
+
+## <mark> Le projet</mark>
+### <mark>qu'est ce qu'on devait faire</mark>
+
+À partir d'un corpus tirés d'articles de journaux et concernant la transition professionnelles au format pdf, nous devions mettre en place un modèle permettant de reconnaître automatiquement les acteurs des transitions ainsi que leurs informations personelles et leur métier avant et après la transition
+
+### <mark>quelles sont les conventions</mark>
+
+### <mark>comment elles entrent dans le projet général</mark>
+
+## <mark>Comment on l'a fait </mark>
+
+### Organisation du travail
+
+- 2 semaines pour l'OCRisation
+  - utilisation de plusieurs logiciel différents 
+  - intérêt des différentes méthodes
+- 1 semaine pour l'annotation
+- 1 semaine pour la conversion des données Glozz en Données pour Spacy
+- Reprise de l'annotation après changement des conventions
+- 1 semaine pour l'immplémentation de l'apprentissage automatique
+- 1 semaine pour la visualisationd des résultats avec dislacy
+- 1 semaine pour l'analyse des résultats
+
+### <mark>annotation mannuelle/accord interanno/outil)</mark>
+- <mark>Statiqtique sur les annotations manuelles (nb catégorie, ...)</mark>
+
+#### Annotation des information personelle avec Glozz
 
 - age
 - nom
@@ -40,56 +70,36 @@ Laurent est conseiller immobilier. --> information perso, nom de métier
 Laurent, conseiller immobilier --> information perso, nom de métier
 D'après le conseiller immobilier, .... --> personne mentionnée, nom de métier
 
-# Convertir la sortie Glozz pour quelle soit utilisable avec Spacy
+### <mark>Annotation automatique (Unitex/Spacy)</mark>
+
+#### Initialiser le fichier de configuration du modèle
+
+En suivant les consignes disponible sur la documentation de [SpaCy](https://spacy.io/usage/training)
+Le fichier de configuration rassemble toutes les données nécéssaire à l'apprentissage du modèle. Il est le seul fichier à être appelé avec la commande `spacy train`.
+Il faut donc au moment de la création du fichier de configuration choisir la partition du corpus et l'utilisation ou non d'un pretraining (qui ne nécéssite pas d'annotation, juste un texte brut)
+
+#### Convertir la sortie Glozz pour quelle soit utilisable avec Spacy
 
 Récupérer le texte du paragraphe, récupérer les EN quand elles sont comprises dans les bornes du paragraphes. Transformer le tout en un tuple contenant le texte du paragraphe et la liste des tuples contenants les EN.
-Il faut également récupérer les relations.
 
-# Analyse des résultats
+#### Entrainement d'un modèle Spacy
 
-## Matrice de confusion
+La ligne de commande qui permet de voir un résultat :
 
-### Pourquoi l'apprentissage à fait ces erreurs
+  `python -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./dev.spacy`
 
-## Rappel, Précision et F-mesure
+## <mark>Evaluation de la detection</mark>
+- <mark>On a pas déclarer tout ce qu'o a fait manuellement</mark>
 
+### Analyse des résultats
 
+#### Matrice de confusion
 
+#### Pourquoi l'apprentissage à fait ces erreurs
 
-# Organisation du travail
+#### Rappel, Précision et F-mesure
 
-- 2 semaines pour l'OCRisation
-  - utilisation de plusieurs logiciel différents 
-  - intérêt des différentes méthodes
-- 1 semaine pour l'annotation
-- 1 semaine pour la conversion des données Glozz en Données pour Spacy
-- Reprise de l'annotation après changement des conventions
-- 1 semaine pour l'immplémentation de l'apprentissage automatique
-- 1 semaine pour l'analyse des résultats
-
-******************************************
-
-# Soutenance
-
-## Problémtique
-
-## Le projet
-### qu'est ce qu'on devrait faire
-
-### quelles sont les conventions
-
-### comment elles entrent dans le projet général
-
-## Comment on 'la fait 
-### annotation mannuelle/accord interanno/outil)
-- Statiqtique sur les annotations manuelles (nb catégorie, ...)
-
-### Annotation automatique (Unitex/Spacy)
-
-## Evaluation de la detection
-- On a pas déclarer tout ce qu'o a fait manuellement
-
-## Conclusion critique des résultats
+## <mark>Conclusion critique des résultats</mark>
 
 ### Critiques 
 
@@ -100,9 +110,12 @@ Il faut également récupérer les relations.
 - On peut aussi se poser la question de la pertinence de l'annotation de toutes les coréférence du texte.
 
 ********************
+
 Critère de notatino
 
 - aisance à l'oral
+  - 20-25min oral
+  - 15 min de question
 - un dossier zippé
   - avec un document explicatif 
   - les scripts

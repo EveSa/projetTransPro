@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<annotations>
+    <metadata corpusHashcode="57853-0"/>
+    <unit id="TXT_IMPORTER_1649409884188">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884188</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="0"/>
+            </start>
+            <end>
+                <singlePosition index="5206"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="TXT_IMPORTER_1649409884189">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884189</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="5206"/>
+            </start>
+            <end>
+                <singlePosition index="5252"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="TXT_IMPORTER_1649409884190">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884190</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="5252"/>
+            </start>
+            <end>
+                <singlePosition index="14562"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="TXT_IMPORTER_1649409884191">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884191</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="14562"/>
+            </start>
+            <end>
+                <singlePosition index="14608"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="TXT_IMPORTER_1649409884192">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884192</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="14608"/>
+            </start>
+            <end>
+                <singlePosition index="24016"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="TXT_IMPORTER_1649409884193">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884193</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="24016"/>
+            </start>
+            <end>
+                <singlePosition index="24062"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="TXT_IMPORTER_1649409884194">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884194</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="24062"/>
+            </start>
+            <end>
+                <singlePosition index="32119"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="TXT_IMPORTER_1649409884195">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884195</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="32119"/>
+            </start>
+            <end>
+                <singlePosition index="32165"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="TXT_IMPORTER_1649409884196">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884196</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="32165"/>
+            </start>
+            <end>
+                <singlePosition index="35877"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="TXT_IMPORTER_1649409884197">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884197</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="35877"/>
+            </start>
+            <end>
+                <singlePosition index="35923"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="TXT_IMPORTER_1649409884198">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884198</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="35923"/>
+            </start>
+            <end>
+                <singlePosition index="42029"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="TXT_IMPORTER_1649409884199">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884199</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="42029"/>
+            </start>
+            <end>
+                <singlePosition index="42075"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="TXT_IMPORTER_1649409884200">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884200</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="42075"/>
+            </start>
+            <end>
+                <singlePosition index="45927"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="TXT_IMPORTER_1649409884201">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884201</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="45927"/>
+            </start>
+            <end>
+                <singlePosition index="45973"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="TXT_IMPORTER_1649409884202">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884202</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="45973"/>
+            </start>
+            <end>
+                <singlePosition index="54034"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="TXT_IMPORTER_1649409884203">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884203</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="54034"/>
+            </start>
+            <end>
+                <singlePosition index="54080"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="TXT_IMPORTER_1649409884204">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884204</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="54080"/>
+            </start>
+            <end>
+                <singlePosition index="55491"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="TXT_IMPORTER_1649409884205">
+        <metadata>
+            <author>TXT_IMPORTER</author>
+            <creation-date>1649409884205</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>paragraph</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="55491"/>
+            </start>
+            <end>
+                <singlePosition index="55537"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="esauvage_1649410093984">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410093984</creation-date>
+            <lastModifier>esauvage</lastModifier>
+            <lastModificationDate>1649410228162</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>CatPersonneMentionnee</type>
+            <featureSet>
+                <feature name="Enonciateur">Non</feature>
+                <feature name="TypePersonneMentionnee">ActeurTransition</feature>
+                <feature name="TypeInformation">Nom</feature>
+                <feature name="MetiersSiActeurTransition">MétierAvant</feature>
+            </featureSet>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="2082"/>
+            </start>
+            <end>
+                <singlePosition index="2090"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="esauvage_1649410234267">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410234267</creation-date>
+            <lastModifier>esauvage</lastModifier>
+            <lastModificationDate>1649410255819</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>CatPersonneMentionnee</type>
+            <featureSet>
+                <feature name="Enonciateur">Non</feature>
+                <feature name="TypePersonneMentionnee">ActeurTransition</feature>
+                <feature name="TypeInformation">MétierActuel</feature>
+                <feature name="MetiersSiActeurTransition">MétierAvant</feature>
+            </featureSet>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="2092"/>
+            </start>
+            <end>
+                <singlePosition index="2139"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="esauvage_1649410263974">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410263974</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>CatConditionsTravail</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="2159"/>
+            </start>
+            <end>
+                <singlePosition index="2177"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="esauvage_1649410286717">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410286717</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>CatConditionsTravail</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="2181"/>
+            </start>
+            <end>
+                <singlePosition index="2201"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="esauvage_1649410317870">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410317870</creation-date>
+            <lastModifier>esauvage</lastModifier>
+            <lastModificationDate>1649410330958</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>CatPersonneMentionnee</type>
+            <featureSet>
+                <feature name="Enonciateur">Non</feature>
+                <feature name="TypePersonneMentionnee">ActeurTransition</feature>
+                <feature name="TypeInformation"/>
+                <feature name="MetiersSiActeurTransition">MétierAvant</feature>
+            </featureSet>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="2291"/>
+            </start>
+            <end>
+                <singlePosition index="2293"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="esauvage_1649410629303">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410629303</creation-date>
+            <lastModifier>esauvage</lastModifier>
+            <lastModificationDate>1649410663922</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>CatPersonneMentionnee</type>
+            <featureSet>
+                <feature name="Enonciateur">Non</feature>
+                <feature name="TypePersonneMentionnee">ActeurTransition</feature>
+                <feature name="TypeInformation">LieuDeVie</feature>
+                <feature name="MetiersSiActeurTransition">MétierAvant</feature>
+            </featureSet>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="3112"/>
+            </start>
+            <end>
+                <singlePosition index="3146"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="esauvage_1649410667322">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410667322</creation-date>
+            <lastModifier>esauvage</lastModifier>
+            <lastModificationDate>1649410703317</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>CatPersonneMentionnee</type>
+            <featureSet>
+                <feature name="Enonciateur">Non</feature>
+                <feature name="TypePersonneMentionnee">ActeurTransition</feature>
+                <feature name="TypeInformation">MétierActuel</feature>
+                <feature name="MetiersSiActeurTransition">MétierAvant</feature>
+            </featureSet>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="3148"/>
+            </start>
+            <end>
+                <singlePosition index="3179"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="esauvage_1649410719564">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410719564</creation-date>
+            <lastModifier>esauvage</lastModifier>
+            <lastModificationDate>1649410748285</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>CatPersonneMentionnee</type>
+            <featureSet>
+                <feature name="Enonciateur">Non</feature>
+                <feature name="TypePersonneMentionnee">ActeurTransition</feature>
+                <feature name="TypeInformation">MétierActuel</feature>
+                <feature name="MetiersSiActeurTransition">MétierAvant</feature>
+            </featureSet>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="3223"/>
+            </start>
+            <end>
+                <singlePosition index="3281"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="esauvage_1649410775960">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410775960</creation-date>
+            <lastModifier>esauvage</lastModifier>
+            <lastModificationDate>1649411842184</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>CatPersonneMentionnee</type>
+            <featureSet>
+                <feature name="Enonciateur">Oui</feature>
+                <feature name="TypePersonneMentionnee">ActeurTransition</feature>
+                <feature name="TypeInformation"/>
+                <feature name="MetiersSiActeurTransition">MétierAvant</feature>
+            </featureSet>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="3283"/>
+            </start>
+            <end>
+                <singlePosition index="3286"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="esauvage_1649410831129">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410831129</creation-date>
+            <lastModifier>esauvage</lastModifier>
+            <lastModificationDate>1649410923038</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>CatPersonneMentionnee</type>
+            <featureSet>
+                <feature name="Enonciateur">Oui</feature>
+                <feature name="TypePersonneMentionnee">ActeurTransition</feature>
+                <feature name="TypeInformation"/>
+                <feature name="MetiersSiActeurTransition">PasActeurTransition</feature>
+            </featureSet>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="3338"/>
+            </start>
+            <end>
+                <singlePosition index="3340"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="esauvage_1649410857711">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410857711</creation-date>
+            <lastModifier>esauvage</lastModifier>
+            <lastModificationDate>1649410928695</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>CatPersonneMentionnee</type>
+            <featureSet>
+                <feature name="Enonciateur">Oui</feature>
+                <feature name="TypePersonneMentionnee">ActeurTransition</feature>
+                <feature name="TypeInformation"/>
+                <feature name="MetiersSiActeurTransition">PasActeurTransition</feature>
+            </featureSet>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="3377"/>
+            </start>
+            <end>
+                <singlePosition index="3379"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="esauvage_1649410871632">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410871632</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>CatPersonneMentionnee</type>
+            <featureSet>
+                <feature name="Enonciateur"/>
+                <feature name="TypePersonneMentionnee"/>
+                <feature name="TypeInformation"/>
+                <feature name="MetiersSiActeurTransition">PasActeurTransition</feature>
+            </featureSet>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="3508"/>
+            </start>
+            <end>
+                <singlePosition index="3510"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="esauvage_1649410901704">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410901704</creation-date>
+            <lastModifier>esauvage</lastModifier>
+            <lastModificationDate>1649410907790</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>CatPersonneMentionnee</type>
+            <featureSet>
+                <feature name="Enonciateur">Non</feature>
+                <feature name="TypePersonneMentionnee">ActeurTransition</feature>
+                <feature name="TypeInformation"/>
+                <feature name="MetiersSiActeurTransition">PasActeurTransition</feature>
+            </featureSet>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="3556"/>
+            </start>
+            <end>
+                <singlePosition index="3558"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="esauvage_1649411053854">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649411053854</creation-date>
+            <lastModifier>esauvage</lastModifier>
+            <lastModificationDate>1649411088221</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>CatPersonneMentionnee</type>
+            <featureSet>
+                <feature name="Enonciateur">Non</feature>
+                <feature name="TypePersonneMentionnee">ActeurTransition</feature>
+                <feature name="TypeInformation">MétierActuel</feature>
+                <feature name="MetiersSiActeurTransition">MétierApres</feature>
+            </featureSet>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="3588"/>
+            </start>
+            <end>
+                <singlePosition index="3631"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="esauvage_1649411092817">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649411092817</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>CatConditionsTravail</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="3638"/>
+            </start>
+            <end>
+                <singlePosition index="3658"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="esauvage_1649411198336">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649411198336</creation-date>
+            <lastModifier>esauvage</lastModifier>
+            <lastModificationDate>1649411212320</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>CatPersonneMentionnee</type>
+            <featureSet>
+                <feature name="Enonciateur">Non</feature>
+                <feature name="TypePersonneMentionnee">ActeurTransition</feature>
+                <feature name="TypeInformation"/>
+                <feature name="MetiersSiActeurTransition">PasActeurTransition</feature>
+            </featureSet>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="3759"/>
+            </start>
+            <end>
+                <singlePosition index="3761"/>
+            </end>
+        </positioning>
+    </unit>
+    <unit id="esauvage_1649411789605">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649411789605</creation-date>
+            <lastModifier>esauvage</lastModifier>
+            <lastModificationDate>1649411810787</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>CatTransitionsPro</type>
+            <featureSet>
+                <feature name="Etat d'avancement de la transition">débutTransition</feature>
+            </featureSet>
+        </characterisation>
+        <positioning>
+            <start>
+                <singlePosition index="3559"/>
+            </start>
+            <end>
+                <singlePosition index="3574"/>
+            </end>
+        </positioning>
+    </unit>
+    <relation id="esauvage_1649410340102">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410340102</creation-date>
+            <lastModifier>esauvage</lastModifier>
+            <lastModificationDate>1649410351018</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>coreference</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <term id="esauvage_1649410317870"/>
+            <term id="esauvage_1649410093984"/>
+        </positioning>
+    </relation>
+    <relation id="esauvage_1649410810072">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410810072</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>coreference</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <term id="esauvage_1649410775960"/>
+            <term id="esauvage_1649410629303"/>
+        </positioning>
+    </relation>
+    <relation id="esauvage_1649410846841">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410846841</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>coreference</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <term id="esauvage_1649410831129"/>
+            <term id="esauvage_1649410629303"/>
+        </positioning>
+    </relation>
+    <relation id="esauvage_1649410863553">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410863553</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>coreference</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <term id="esauvage_1649410857711"/>
+            <term id="esauvage_1649410629303"/>
+        </positioning>
+    </relation>
+    <relation id="esauvage_1649410876210">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410876210</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>coreference</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <term id="esauvage_1649410871632"/>
+            <term id="esauvage_1649410629303"/>
+        </positioning>
+    </relation>
+    <relation id="esauvage_1649410916103">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649410916103</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>coreference</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <term id="esauvage_1649410901704"/>
+            <term id="esauvage_1649410629303"/>
+        </positioning>
+    </relation>
+    <relation id="esauvage_1649411219262">
+        <metadata>
+            <author>esauvage</author>
+            <creation-date>1649411219262</creation-date>
+            <lastModifier>n/a</lastModifier>
+            <lastModificationDate>0</lastModificationDate>
+        </metadata>
+        <characterisation>
+            <type>coreference</type>
+            <featureSet/>
+        </characterisation>
+        <positioning>
+            <term id="esauvage_1649411198336"/>
+            <term id="esauvage_1649410629303"/>
+        </positioning>
+    </relation>
+</annotations>

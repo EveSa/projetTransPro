@@ -41,12 +41,6 @@ def annotations(corpus_xml,corpus):
 		if re.search(r"<unit.*?>.*?<type>(?!paragraph).*?</type>",unit) :	#?! ça veut dire "différent de". On cherche tous les noeuds "<unit>" qui contiennent "paragraph"
 			
 
-			#Petit trucs de test
-			#(<featureSet>(<featurename="[A-z]+">[A-z]+</feature>)+?</featureSet>|<featureSet/>)
-			#(r'<characterisation><type>([A-z]+)</type>.*?</characterisation><positioning><start><singlePositionindex="([0-9]+)"/></start><end><singlePositionindex="([0-9]+)"/></end></positioning>',unit)		
-			#(r'<characterisation><type>(CatConditionsTravail)</type><featureSet/></characterisation><positioning><start><singlePositionindex="(3638)"/></start><end><singlePositionindex="(3658)"/></end></positioning>',unit)
-			#
-
 			#Et là, on récupère les infos
 			m=re.search(r'<characterisation><type>([a-zA-Z0-9À-ž]+)<\/type>((<featureSet>((<featurename="[a-zA-Z0-9À-ž]+">([a-zA-Z0-9À-ž]+)<\/feature>)|(<featurename="[a-zA-Z0-9À-ž]+"\/>))+<\/featureSet>)|<featureSet\/)<\/characterisation><positioning><start><singlePositionindex="([0-9]+)"\/><\/start><end><singlePositionindex="([0-9]+)"\/><\/end><\/positioning>',unit)		
 			
@@ -71,15 +65,14 @@ def annotations(corpus_xml,corpus):
 		if nex_key_assign.get(key)==None:
 			continue
 		dic_final[nex_key_assign.get(key)]=value
-	print(dic_final)
+	#print(dic_final)
 
-	new_dic=dict([(nex_key_assign.get(key), value) for key, value in paragraph_id.items()])
 	#print(new_dic)
 	# Faire une liste de tuples qui contiennent ("le paragraphe",[(start,end,EN),(...)])
-	docs=list(new_dic.items())
+	docs=list(dic_final.items())
 	#print(docs)
 
-	return dic_final
+	return docs
 
 
 training_data = annotations(corpus_xml,corpus)
