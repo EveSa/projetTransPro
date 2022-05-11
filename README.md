@@ -27,14 +27,47 @@ On essaie également une OCRisation avec la bibliothèque `pymuPDF` en bouclant 
 
 ## <mark> Problématique</mark>
 
-Avec l'impact de la COVID-19 sur l'économie, les transitions professionnelles se sont faites plus courante. L'objetif est donc de mettre en place un modèle pour reconnaître automatiquement les transitions professionnelles dans les textes journalistiques à partir d'un corpus.
+Avec l'impact de la COVID-19 sur l'économie, les transitions professionnelles se sont faites plus courante. L'objetif est donc de mettre en place un modèle pour reconnaître automatiquement les transitions professionnelles dans les textes journalistiques à partir d'un corpus. Les 30 articles qui constituent ce corpus ont été récupérées dans la base de données 'Europresse' à l'aide d'une recherche full-text utilisant les expressions régulières.
 
 ## <mark> Le projet</mark>
 ### <mark>qu'est ce qu'on devait faire</mark>
 
-À partir d'un corpus tirés d'articles de journaux et concernant la transition professionnelles au format pdf, nous devions mettre en place un modèle permettant de reconnaître automatiquement les acteurs des transitions ainsi que leurs informations personelles et leur métier avant et après la transition
+À partir d'un corpus tirés d'articles de journaux et concernant la transition professionnelles au format pdf, nous devions mettre en place un modèle permettant de reconnaître automatiquement les acteurs des transitions ainsi que leurs informations personelles et leur métier avant et après la transition.
 
 ### <mark>quelles sont les conventions</mark>
+
+CatPersonneMentionnee
+- Enonciateur
+  - Oui
+  - Non
+- TypePersonneMentionee
+  - Acteur Transition
+  - TemoinTransition
+  - ActeurPotentielTransition
+- NomDeMétier
+  - NomDeMétier
+  - Aucune
+- Nom
+  - Nom
+  - Aucune
+
+InformationsPersonnelles
+- TypeInformation
+  - Nom
+  - Age
+  - Métier
+  - LieuDeVie
+  - LieuDeTravail
+  - Donnée Chiffrée
+- MetiersSiActeurTransition 
+  - MétierAvant
+  - MétierApres
+  - Aucune
+
+Nous avons également annotés les relations mais elles n'ont pas été prise en compte dans notre modèle :
+- coreference
+- relationDonneeChiffree
+- relationInformationsPersonnelles
 
 ### <mark>comment elles entrent dans le projet général</mark>
 
