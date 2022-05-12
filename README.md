@@ -107,19 +107,23 @@ D'après le conseiller immobilier, .... --> personne mentionnée, nom de métier
 
 #### Initialiser le fichier de configuration du modèle
 
-En suivant les consignes disponible sur la documentation de [SpaCy](https://spacy.io/usage/training)
+En suivant les consignes disponible sur la documentation de [SpaCy](https://spacy.io/usage/training) et ce [site-web](https://ner.pythonhumanities.com/03_02_train_spacy_ner_model.html) qui contient également des informations intéressantes.
 Le fichier de configuration rassemble toutes les données nécéssaire à l'apprentissage du modèle. Il est le seul fichier à être appelé avec la commande `spacy train`.
 Il faut donc au moment de la création du fichier de configuration choisir la partition du corpus et l'utilisation ou non d'un pretraining (qui ne nécéssite pas d'annotation, juste un texte brut)
+
+`config.cfg`
 
 #### Convertir la sortie Glozz pour quelle soit utilisable avec Spacy
 
 Récupérer le texte du paragraphe, récupérer les EN quand elles sont comprises dans les bornes du paragraphes. Transformer le tout en un tuple contenant le texte du paragraphe et la liste des tuples contenants les EN.
 
+`glozz2tuples.py`
+
 #### Entrainement d'un modèle Spacy
 
 La ligne de commande qui permet de voir un résultat :
 
-  `python -m spacy train config.cfg --output ./output --paths.train ./train.spacy --paths.dev ./dev.spacy`
+  `python3 -m spacy train config.cfg --output ./models/output`
 
 ## <mark>Evaluation de la detection</mark>
 - <mark>On a pas déclarer tout ce qu'o a fait manuellement</mark>

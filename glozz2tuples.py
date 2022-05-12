@@ -3,19 +3,27 @@
 
 import re
 
-#On ouvre le corpus annoté
-corpus_xml=open("corpus_final_annote.xml.aa").read()
-#Et le corpus de référence
-corpus=open("corpus_final_annote.txt.ac").read()
-fichier_sortie=open("fichier_sortie.txt", 'w')
+### OUVERTURE DES FICHIERS DE DONNÉES ###
 
+# Ouverture du corpus annoté
+corpus_xml=open("corpus_final_annote.xml.aa").read()
+# Ouverture du corpus de référence
+corpus=open("corpus_final_annote.txt.ac").read()
+
+# Pour vérification de la sortie, on peut ajouter l'ouverture d'un fichier output
+#fichier_sortie=open("fichier_sortie.txt", 'w')
+
+
+### COEUR DU PROGRAMME ###
+
+# On fait du programme une fonction pour pourvoir l'appeler dans notre programme `preprocess.py`
 def annotations(corpus_xml,corpus):
 
-	#On instancie les variables
+	# On instancie des dictionnaires qui recupèrent les données
 	paragraph_id={}
 	nex_key_assign={}
 
-	#On nettoie le texte et on le split selon </unit> ou </relation>
+	# On nettoie le texte et on le split selon </unit> ou </relation>
 	corpus_xml=re.sub(r"\n|(\t)+|( )+","",corpus_xml)
 	corpus_xml=re.split(r"</unit>|</relation>",corpus_xml)
 
@@ -31,7 +39,7 @@ def annotations(corpus_xml,corpus):
 			#ça c'est pas pour tout de suite en fait
 			if not re.search(r"====",para) :
 				nex_key_assign[(start,end)]=para
-	fichier_sortie.write(str(nex_key_assign.items()))
+	#fichier_sortie.write(str(nex_key_assign.items()))
 
 
 	# Regarder dans quels paragaphes sont les annotations
@@ -46,7 +54,7 @@ def annotations(corpus_xml,corpus):
 			
 			#Le nom de l'entité
 			en=m.group(1)
-			#Son début dans le paragraphe (il me semble)
+			#Son début dans le paragraphe
 			start_EN=int(m.group(8))
 			#Sa fin dans le paragraphe
 			end_EN=int(m.group(9))
@@ -59,16 +67,20 @@ def annotations(corpus_xml,corpus):
 	#Petits trucs de test encore
 	#print(paragraph_id)
 	#
+	### IMPLEMENTATION DU DICTIONNAIRE FINAL ###
 	dic_final={}
 	#Entrer la string dans le dict
 	for key, value in paragraph_id.items():
+		#Permet d'enlever les erreurs ou le paragraph ne serait pas reconnu
 		if nex_key_assign.get(key)==None:
 			continue
-		dic_final[nex_key_assign.get(key)]=value
+		# Permet d'enlever toutes les valeurs de paragraph qui ne sont en fait pas annotés
+		if value != [] :
+			dic_final[nex_key_assign.get(key)]=value
 	#print(dic_final)
 
-	#print(new_dic)
-	# Faire une liste de tuples qui contiennent ("le paragraphe",[(start,end,EN),(...)])
+	# Transformation du dictionnaire en liste pour bien répondre au format d'entrée de SpaCy
+
 	docs=list(dic_final.items())
 	#print(docs)
 
@@ -76,7 +88,10 @@ def annotations(corpus_xml,corpus):
 
 
 training_data = annotations(corpus_xml,corpus)
+# Si on laisse le print, il sera lu dans `preprocess`
+#print(training_data)
+
+
+
 	########### Ce qu'il reste à faire ################
-	# - les cas où la regex ne fonctionne pas
-	# - ajouter le texte du paragraphe dans le dictionnaire
-	# - vérifier que les index sont les bons pour les EN
+	# - ajouter un findall pour trouver toutes les caractéristiques de l'EN
