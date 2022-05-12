@@ -22,7 +22,21 @@
     ],
     "ner":[
       "CatPersonneMentionnee",
-      "InformationsPersonnelles"
+      "CatPersonneMentionnee.Non.ActeurTransition",
+      "CatPersonneMentionnee.Non.ActeurTransition.Nom",
+      "CatPersonneMentionnee.Non.ActeurTransition.NomDeM\u00e9tier",
+      "CatPersonneMentionnee.Non.TemoinTransition.Nom",
+      "CatPersonneMentionnee.Oui.ActeurTransition",
+      "InformationsPersonnelles.Age.Auncune",
+      "InformationsPersonnelles.Age.PasActeurTransition",
+      "InformationsPersonnelles.LieuDeTravail.Auncune",
+      "InformationsPersonnelles.LieuDeTravail.PasActeurTransition",
+      "InformationsPersonnelles.LieuDeVie.Auncune",
+      "InformationsPersonnelles.LieuDeVie.PasActeurTransition",
+      "InformationsPersonnelles.M\u00e9tier.Auncune",
+      "InformationsPersonnelles.M\u00e9tier.M\u00e9tierAvant",
+      "InformationsPersonnelles.M\u00e9tierApres.M\u00e9tierApres",
+      "InformationsPersonnelles.M\u00e9tierAvant.M\u00e9tierAvant"
     ]
   },
   "pipeline":[
@@ -37,22 +51,117 @@
 
   ],
   "performance":{
-    "ents_f":0.1217391304,
-    "ents_p":0.2916666667,
-    "ents_r":0.0769230769,
+    "ents_f":0.0454545455,
+    "ents_p":0.0731707317,
+    "ents_r":0.032967033,
     "ents_per_type":{
-      "CatPersonneMentionnee":{
-        "p":0.3181818182,
-        "r":0.1129032258,
-        "f":0.1666666667
+      "CatPersonneMentionnee.Non.TemoinTransition.Nom":{
+        "p":0.2,
+        "r":0.3333333333,
+        "f":0.25
       },
-      "InformationsPersonnelles":{
+      "CatPersonneMentionnee.Oui.ActeurTransition":{
+        "p":0.25,
+        "r":0.6666666667,
+        "f":0.3636363636
+      },
+      "CatPersonneMentionnee.Non.ActeurTransition.Nom":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "InformationsPersonnelles.Donn\u00e9echiffr\u00e9e.PasActeurTransition":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "CatPersonneMentionnee.Non.ActeurPotentielTransition":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "CatPersonneMentionnee.Non.TemoinTransition":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "CatPersonneMentionnee.Oui.TemoinTransition":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "InformationsPersonnelles.M\u00e9tier.PasActeurTransition":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "CatPersonneMentionnee.Non.ActeurTransition":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "InformationsPersonnelles.LieuDeTravail.PasActeurTransition":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "InformationsPersonnelles.LieuDeTravail.M\u00e9tierApres":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "InformationsPersonnelles.M\u00e9tierApres.M\u00e9tierApres":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "InformationsPersonnelles.M\u00e9tier.M\u00e9tierApres":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "InformationsPersonnelles.LieuDeTravail.M\u00e9tierAvant":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "CatPersonneMentionnee.Oui.ActeurTransition.Nom":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "CatPersonneMentionnee.Non.ActeurTransition.NomDeM\u00e9tier":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "CatPersonneMentionnee":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "InformationsPersonnelles.Donn\u00e9echiffr\u00e9e":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "CatPersonneMentionnee.Non.TemoinTransition.NomDeM\u00e9tier":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "CatPersonneMentionnee.Oui.TemoinTransition.Nom":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "InformationsPersonnelles.Age":{
         "p":0.0,
         "r":0.0,
         "f":0.0
       }
     },
-    "tok2vec_loss":0.0000012117,
-    "ner_loss":0.0000008013
+    "tok2vec_loss":9.5207831976,
+    "ner_loss":112.9783758783
   }
 }

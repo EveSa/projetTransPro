@@ -111,6 +111,8 @@ En suivant les consignes disponible sur la documentation de [SpaCy](https://spac
 Le fichier de configuration rassemble toutes les données nécéssaire à l'apprentissage du modèle. Il est le seul fichier à être appelé avec la commande `spacy train`.
 Il faut donc au moment de la création du fichier de configuration choisir la partition du corpus et l'utilisation ou non d'un pretraining (qui ne nécéssite pas d'annotation, juste un texte brut)
 
+On doit également initialiser les labels avec `python -m spacy init labels config.cfg ./corpus `
+
 `config.cfg`
 
 #### Convertir la sortie Glozz pour quelle soit utilisable avec Spacy

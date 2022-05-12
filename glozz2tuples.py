@@ -51,13 +51,22 @@ def annotations(corpus_xml,corpus):
 
 			#Et là, on récupère les infos
 			m=re.search(r'<characterisation><type>([a-zA-Z0-9À-ž]+)<\/type>((<featureSet>((<featurename="[a-zA-Z0-9À-ž]+">([a-zA-Z0-9À-ž]+)<\/feature>)|(<featurename="[a-zA-Z0-9À-ž]+"\/>))+<\/featureSet>)|<featureSet\/)<\/characterisation><positioning><start><singlePositionindex="([0-9]+)"\/><\/start><end><singlePositionindex="([0-9]+)"\/><\/end><\/positioning>',unit)		
+			en_find=re.search(r'<characterisation><type>([a-zA-Z0-9À-ž]+)<\/type>',unit)	
+			en=en_find.group(1)
+			en2_find = re.findall(r'<featurename="[a-zA-Z0-9À-ž]+">([a-zA-Z0-9À-ž]+)<\/feature>',unit)
+
+			#On ajoute au nom de l'entité ses précisions
+			for cat in en2_find :
+				if cat != 'Aucune':
+					en+="."+cat
+
+			index_find=re.search(r'<positioning><start><singlePositionindex="([0-9]+)"\/><\/start><end><singlePositionindex="([0-9]+)"\/><\/end><\/positioning>',unit)
 			
-			#Le nom de l'entité
-			en=m.group(1)
 			#Son début dans le paragraphe
-			start_EN=int(m.group(8))
+			start_EN=int(index_find.group(1))
+
 			#Sa fin dans le paragraphe
-			end_EN=int(m.group(9))
+			end_EN=int(index_find.group(2))
 
 			# Et on met tout dans le dico
 			for start,end in paragraph_id:
