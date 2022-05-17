@@ -1,14 +1,11 @@
 import spacy
 from spacy.tokens import DocBin
-import os
-
-os.chdir("C://Users//elisa//Downloads//Enrichissement de corpus//Projet-2")
 from glozz2tuples import annotations
 
 #On ouvre le corpus annoté
-corpus_xml=open("C://Users//elisa//Downloads//Enrichissement de corpus//Projet-2//glozz//annotation.aa", encoding="utf-8").read()
+corpus_xml=open("corpus_final_annote.xml.aa").read()
 #Et le corpus de référence
-corpus=open("C://Users//elisa//Downloads//Enrichissement de corpus//Projet-2//glozz//annotation.ac", encoding="utf-8").read()
+corpus=open("corpus_final_annote.txt.ac").read()
 
 nlp = spacy.blank("fr")
 training_data = annotations(corpus_xml,corpus)

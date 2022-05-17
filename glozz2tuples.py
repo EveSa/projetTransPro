@@ -1,14 +1,12 @@
-#Ce script permet de tranformer les fichiers issus de Glozz en dictionnaire/liste qui seront utilisÃ©s dans l'apprentissage automatique avec Spacy (https://spacy.io/usage/training#training-data)
-# Pour finaliser l'apprentissage automatique, il faut faire le fichier init ... et le reste j'ai pas tout compris.
+#Ce script permet de tranformer les fichiers issus de Glozz en dictionnaire/liste qui seront utilisés dans l'apprentissage automatique avec Spacy (https://spacy.io/usage/training#training-data)
 
 import re
 
-#On ouvre le corpus annotÃ©
-corpus_xml=open("C://Users//elisa//Downloads//Enrichissement de corpus//Projet-2//glozz//annotation.aa", encoding="utf-8").read()
-#Et le corpus de rÃ©fÃ©rence
-corpus=open("C://Users//elisa//Downloads//Enrichissement de corpus//Projet-2//glozz//annotation.ac", encoding="utf-8").read()
-fichier_sortie=open("fichier_sortie.txt", 'w', encoding="utf-8")
-
+#On ouvre le corpus annoté
+corpus_xml=open("./glozz/annotation.aa").read()
+#Et le corpus de référence
+corpus=open("./glozz/annotation.ac").read()
+fichier_sortie=open("fichier_sortie.txt", 'w')
 
 def annotations(corpus_xml,corpus):
 
