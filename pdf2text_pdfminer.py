@@ -2,7 +2,6 @@
 import pdfminer
 from pdfminer.high_level import extract_text
 import glob
-import os
 
 directory = glob.glob('corpus_final/*.pdf') #on garde dans une liste tous les noms de pdf
 corpus_OCR = open('corpus_final_pdfminerpy.txt', 'w') #on ouvre le fichier final
