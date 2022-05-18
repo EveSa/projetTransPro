@@ -1,3 +1,6 @@
+#pip install opencv-python
+#python3 -c "import cv2"
+
 import cv2
 import numpy as np
 import glob
@@ -22,14 +25,14 @@ def ResizeWithAspectRatio(image, width=None, height=None, inter=cv2.INTER_AREA):
 #=========================#
 def getBoundingBox(jpgFile):
     " Cette fonction retourne la liste des tuple contenant les bords droit, haut, gauche et bas des boîtes marquées en vert dans le fichier jpg donné en argument "
-    print(jpgFile) #Verifocation du nom du fichier
+    print(jpgFile) #Vérification du nom du fichier
 
     image = cv2.imread(jpgFile) #On ouvre l'image avec cv2
 
     #image = ResizeWithAspectRatio(image, width=900)  #Si besoin il y a de faire apparaître les images
 
     #=== convert to hsv ===#
-    hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+    hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV) #saturation qui permet de faire ressortir des débuts de bloc
     #===On applique un masque pour ne reconnaître que les parties qui sont en vert (dont le code RGB est entre (36, 25, 25) et (70, 255,255))===#
     mask = cv2.inRange(hsv, (36, 25, 25), (70, 255,255))
 
@@ -67,10 +70,7 @@ def getBoundingBox(jpgFile):
             bottom=max(Y)
             #On écrit ensuite ces donnnées sous forme de tuple dans une nouvelle variable
             boundingbox=(x0, top, x1, bottom)
-            #et on ajoute e nouveau tuple à la liste des limites de boite de la page traitée
+            #et on ajoute de nouveau tuple à la liste des limites de boite de la page traitée
             boundingBoxes.append(boundingbox)
     
     return (boundingBoxes)
-
-#out3=['corpus_final_jpg/Apräs la pandÇmie, une envie de reconversion professionnelle/page3.jpg']
-#print(getBoundingBox(out3[0]))
