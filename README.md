@@ -27,7 +27,11 @@ On essaie également une OCRisation avec la bibliothèque `pymuPDF` en bouclant 
 
 ## <mark> Problématique</mark>
 
-Avec l'impact de la COVID-19 sur l'économie, les transitions professionnelles se sont faites plus courante. L'objetif est donc de mettre en place un modèle pour reconnaître automatiquement les transitions professionnelles dans les textes journalistiques à partir d'un corpus. Les 30 articles qui constituent ce corpus ont été récupérées dans la base de données 'Europresse' à l'aide d'une recherche full-text utilisant les expressions régulières.
+Avec l'impact de la COVID-19 sur l'économie, les transitions professionnelles se sont faites plus courante. L'étude vise à rechercher l'influence des médias dans le changement de la perception des transitions professionnelles et les procédés à l'origine de ces modifications de connotations. Cette étude du domaine de la psychologie nécessite le concours du TAL : en effet, les chercheuses souhaitent analyser un nombre important de texte issus de la presse afin de pouvoir inférer des hypothèses. Nous avons donc été chargées d'analyser un corpus à l'aide des méthodes du TAL.
+
+Nous devions mettre en place un modèle pour reconnaître automatiquement les transitions professionnelles dans les textes journalistiques.
+
+Les 30 articles qui constituent ce corpus ont été récupérées dans la base de données 'Europresse' à l'aide d'une recherche full-text utilisant les expressions régulières.
 
 ## <mark> Le projet</mark>
 ### <mark>qu'est ce qu'on devait faire</mark>

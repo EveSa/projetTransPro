@@ -50,7 +50,7 @@ def annotations(corpus_xml,corpus):
 			
 
 			#Et là, on récupère les infos
-			m=re.search(r'<characterisation><type>([a-zA-Z0-9À-ž]+)<\/type>((<featureSet>((<featurename="[a-zA-Z0-9À-ž]+">([a-zA-Z0-9À-ž]+)<\/feature>)|(<featurename="[a-zA-Z0-9À-ž]+"\/>))+<\/featureSet>)|<featureSet\/)<\/characterisation><positioning><start><singlePositionindex="([0-9]+)"\/><\/start><end><singlePositionindex="([0-9]+)"\/><\/end><\/positioning>',unit)		
+			#m=re.search(r'<characterisation><type>([a-zA-Z0-9À-ž]+)<\/type>((<featureSet>((<featurename="[a-zA-Z0-9À-ž]+">([a-zA-Z0-9À-ž]+)<\/feature>)|(<featurename="[a-zA-Z0-9À-ž]+"\/>))+<\/featureSet>)|<featureSet\/)<\/characterisation><positioning><start><singlePositionindex="([0-9]+)"\/><\/start><end><singlePositionindex="([0-9]+)"\/><\/end><\/positioning>',unit)		
 			en_find=re.search(r'<characterisation><type>([a-zA-Z0-9À-ž]+)<\/type>',unit)	
 			en=en_find.group(1)
 			en2_find = re.findall(r'<featurename="[a-zA-Z0-9À-ž]+">([a-zA-Z0-9À-ž]+)<\/feature>',unit)
@@ -98,7 +98,7 @@ def annotations(corpus_xml,corpus):
 
 training_data = annotations(corpus_xml,corpus)
 # Si on laisse le print, il sera lu dans `preprocess`
-#print(training_data)
+print(training_data)
 
 
 
